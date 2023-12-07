@@ -1,0 +1,314 @@
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/* 最外圍 */
+.container{
+    margin: 0 auto;
+    width:100%;
+}
+
+/* title */
+.frame{
+    height:84px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
+}
+.menu{
+    display:flex;
+    height:44px;
+    width:1800px;
+}
+.left{
+    display:flex;
+    width:300px;
+    font-size:28px;
+    align-items: center;
+    text-align:center;
+    line-height: 44px;
+    margin-left:150px;
+}
+.right{
+    display:flex;
+    justify-content:flex-end;
+    flex:auto;
+    line-height: 44px;
+}
+.item{
+    flex:none;
+    width:80px;
+    margin-right:20px;
+    text-align:center;
+    display:block;
+    font-size:20px;
+}
+
+/* Banner */
+.Banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:528px;
+}
+.BannerLeft{
+    justify-content:center;
+    align-items:center;
+    height:128px;
+    width:526px;
+}
+.BannerLeftUp{
+    height:60px;
+    width:526px;
+    font-size:40px;
+}
+.BannerLeftdown{
+    height:60px;
+    width:526px;
+    font-size:20px;
+}
+.BannerRight{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:368px;
+    width:746px;
+}
+img.BannerRight{
+    height:352px;
+    width:564px;
+}
+
+/* comment */
+.Comment{
+    height:217px;
+    display:flex;
+    justify-content:center;
+}
+.CommentCard{
+    height:177px;
+    width:1296px;
+    display:flex;
+    align-items:center;
+}
+.TurnCard{
+    height:177px;
+    width:416px;
+}
+
+/* Rectangle */
+.Rectangle{
+    height: 60px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: rgba(245, 245, 255, 1);
+}
+
+/* Find */
+.Find{
+    background-color: #F5F5FF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:460px;
+}
+.MobileLeft{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:636px;
+    margin:100px;
+}
+img.Mobile{
+    background-color: #F5F5FF;
+    height:360px;
+    width:360px;
+    margin:100px;
+}
+.FindApp{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:184px;
+    width:636px;
+    margin:100px;
+}
+.FindAppUp{
+    height:38px;
+    width:206px;
+    font-size:32px;
+    margin:20px;
+}
+.FindAppdown{
+    height:30px;
+    width:636px;
+    font-size:20px;
+    margin:20px;
+}
+.FindAppButton{
+    height:56px;
+    width:526px;
+    font-size:20px;
+    margin:20px;
+}
+.FindAppText{
+    height:88px;
+    width:636px;
+}
+
+/* invertedTriangle */
+.invertedTriangle{
+    height: 60px;
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    background-color: rgba(245, 245, 255, 1);
+}
+
+/* special */
+.Special{
+    display:flex;
+    height:509px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.SpecialApp{
+    height:38px;
+    width:1920px;
+    text-align:center;
+    justify-content:center;
+    font-size:32px;
+}
+.SpecialCard{
+    height:271px;
+    width:1296px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.SpecialAppCard{
+    height:271px;
+    width:306px;
+}
+
+/* grayRectangle */
+.grayRectangle{
+    height: 60px;
+    clip-path: polygon(100% 100%, 0% 100%, 0 0);
+    background-color: rgba(249, 249, 250, 1);
+}
+
+
+/* Wishes */
+.Wishes{
+    background-color: #F9F9FA;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:480px;
+}
+.WishesApp{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:184px;
+    width:636px;
+}
+.WishesAppUp{
+    height:38px;
+    width:349px;
+    font-size:32px;
+    margin:20px;
+}
+.WishesAppDown{
+    height:30px;
+    width:636px;
+    font-size:20px;
+    margin:20px;
+}
+.WishesAppButton{
+    height:56px;
+    width:526px;
+    font-size:20px;
+    margin:20px;
+}
+.WishesAppText{
+    height:88px;
+    width:636px;
+}
+.WishesRight{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:636px;
+}
+img.WishesMan{
+    background-color: #F9F9FA;
+    height:360px;
+    width:360px;
+}
+
+/* footer */
+.Footer{
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #F2F2F5;
+}
+.FooterMenu{
+    display:flex;
+    height:48px;
+    width:1800px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:28px;
+    margin-left:150px;
+}
+.Footerleft{
+    display:flex;
+    height:48px;
+    width:600px;
+    font-size:28px;
+    align-items: center;
+    text-align:center;
+}
+.GoodApp{
+    display:flex;
+    height:44px;
+    font-size:44px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+}
+img.logo{
+    height:44px;
+    text-align:center;
+}
+img.FooterLeftIcon{
+    text-align:center;
+}
+.FooterLeftIcon{
+    display:flex;
+    height:48px;
+    text-align:center;
+    align-items: center;
+}
+.FooterRight{
+    display:flex;
+    justify-content:flex-end;
+    flex:auto;
+    line-height: 44px;
+}
+.FooterItem{
+    flex:none;
+    height:24px;
+    margin-right:20px;
+    text-align:center;
+    display:block;
+    font-size:20px;
+    width:80px;
+}

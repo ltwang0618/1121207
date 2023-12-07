@@ -1,3 +1,6 @@
+body{
+    background-color: #F5F5FF;
+}
 
 a{
     text-decoration:none;
@@ -39,10 +42,11 @@ img.logo{
     margin:20px;
 }
 .content{
+    
     height:44px;
     justify-content:center;
     align-items:center;
     display:flex;
     flex-wrap: wrap;
-    font-size:24px;
+    font-size:20px;
 }

@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register1-1.html</title>
-    <link rel="stylesheet" type="text/css" href="css/Reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/register1-1.css" />
+    <link rel="stylesheet" type="text/css" href="Reset.css" />
+    <link rel="stylesheet" type="text/css" href="register1-1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
+
 </head>    
 <body>
-    <div class="container">
+   
         <div class="frame">
             <div class="title">
-                <a href="#"><img src="images/thumb.png" alt="logo"></a>
                 <a href="#"><span>好用APP</span></a>
             </div>
         </div>
@@ -22,42 +25,46 @@
             <div class="content">
                 <p>帳號</p>
             </div>
-            <div class="content">
-                <p><input type="text" name="user" autofocus></p>
-
+            <div class="content" style="display: flex; flex-direction: column;">
+                <p><input type="text" name="user" autofocus class="email"></p>
+                <p class="messageEmail" style="font-size: 16px; color: red;"></p>
+                <p class="emailCheck" style="font-size: 16px; color: red;"></p>
             </div>
+
             <div class="content">
                 <p>使用者名稱</p>
             </div>
-            <div class="content">
-                <p><input type="text" name="user" autofocus></p>
-
+            <div class="content" style="display: flex; flex-direction: column;">
+                <p><input type="text" name="user" autofocus class="userName"></p>
+                <p class="messageuserName" style="font-size: 16px; color: red;"></p>
             </div>
+
             <div class="content">
                 <p>密碼</p>
             </div>
-            <div class="content">
-                <p><input type="password" name="pwd" required></p>
-
+            <div class="content" style="display: flex; flex-direction: column;">
+                <p><input type="password" name="pwd" required class="password"></p>
+                <p class="messagepassword" style="font-size: 16px; color: red;"></p>
             </div>
-            <div class="content">
+            <div class="content" >
                 <p>確認密碼</p>
             </div>
-            <div class="content">
-                <p><input type="password" name="pwd" required></p>
-
+            <div class="content" style="display: flex; flex-direction: column;">
+                <p><input type="password" name="pwd" required class="passwordCheck"></p>
+                <p class="messagepasswordCheck" style="font-size: 16px; color: red;"></p>
             </div>
             <div class="content">
                 <p>生日</p>
             </div>
             <div class="content">
-                <p><input type="date" name="dd"</p>
+                <p><input type="date" name="dd" class="date"></p>
             </div>
             <div class="content">
-                <p><input type="button" value="註冊"></p>
+                <p><input type="button" value="註冊" class="btn"></p>
             </div>
         </form>
     </div>
+    <script src="register1-1.js"></script>
 </body>
 </html>
 

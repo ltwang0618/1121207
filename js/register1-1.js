@@ -15,17 +15,24 @@ btn.addEventListener('click',function(e){
     let passwordCheck =document.querySelector('.passwordCheck').value;
     let password = document.querySelector('.password').value;
     let email = document.querySelector('.email').value;
+    let username = document.querySelector('.userName').value;
     if (!validateEmail(email)){
         emailCheck.innerHTML='請輸入有效電子郵件'
         return;
     }if(email != 0&& password != 0 && password===passwordCheck&& dateValue !=0){
-    data.account =email;
-    data.password=password;
+    data={
+        account:email,
+        password:password,
+        userName:username,
+        birthday:dateValue
+    };
     alert('註冊成功')
-    emailCheck.innerHTML=''
+    emailCheck.innerHTML='';
+    let jsonData= JSON.stringify(data);
+    console.log(jsonData)
+    return;
    }else{
     alert('帳戶或密碼輸入錯誤')
-    
     }
 })
 //偵測使用者名稱是否輸入文字

@@ -22,26 +22,28 @@
             <div class="content">
                 <p>帳號</p>
             </div>
-            <div class="content">
-                <p><input type="text" name="user" autofocus></p>
-
+            <div class="content" style="display: flex;flex-direction: column; ">
+                <p><input type="text" name="user" autofocus class="account"></p>
+                <p class="accountMessage" style="color: red; font-size: 16px; "></p>
             </div>
  
             <div class="content">
                 <p>密碼</p>
             </div>
-            <div class="content">
-                <p><input type="password" name="pwd" required></p>
-
+            <div class="content" style="display: flex;flex-direction: column; ">
+                <p><input type="password" name="pwd" required class="password"></p>
+                <p class="passwordMessage" style="color: red; font-size: 16px; "></p>
             </div>
 
             <div class="content">
-                <p><input type="button" value="登入"></p>
+                <p><input type="button" value="登入" class="loginBtn"></p>
             </div>
             <div class="content">
                 <p><input type="button" value="忘記密碼"></p>
             </div>
         </form>
     </div>
+    
+    <script src="js/login.js"></script>
 </body>
 </html>

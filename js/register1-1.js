@@ -29,6 +29,7 @@ function check() {
                 userName: username,
                 birthday: dateValue
             };
+
             dataList.push(userData);
             alert('註冊成功');
             emailCheck.innerHTML = '';
@@ -77,8 +78,7 @@ function check() {
     btn.addEventListener('click',function(e){
         let str = '';
         let dateValue = date.value;
-        str = dateValue;
-        dataList[dataList.length - 1].birthday = str;
+        str = dateValue;      
     });
 }
 

@@ -1,9 +1,3 @@
-let data = [
-    { email: 'abc123@gmail.com', password: 'a123456' },
-    { email: 'abc1234@gmail.com', password: 'a1234567' },
-    { email: 'abc12345@gmail.com', password: 'a12345678' }
-];
-
 let btn = document.querySelector('.loginBtn');
 const accountMessage = document.querySelector('.accountMessage');
 const passwordMessage = document.querySelector('.passwordMessage');
@@ -28,13 +22,17 @@ btn.addEventListener('click', function (e) {
     if (accountMessageStr === '' && passwordMessageStr === '') {
         let loginSuccess = false;
 
-        data.forEach(function (item) {
-            if (account === item.email && password === item.password) {
+        // 获取之前注册页面存储在localStorage中的用户数据
+        let storedDataList = localStorage.getItem('userDataList');
+        let dataList = storedDataList ? JSON.parse(storedDataList) : [];
+
+        dataList.forEach(function (item) {
+            if (account === item.account && password === item.password) {
                 loginSuccess = true;
                 alert('登入成功');
-                document.querySelector('.account').value=''
-                document.querySelector('.password').value=''
-                return;  
+                document.querySelector('.account').value = '';
+                document.querySelector('.password').value = '';
+                return;
             }
         });
 

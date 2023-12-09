@@ -22,7 +22,6 @@ btn.addEventListener('click', function (e) {
     if (accountMessageStr === '' && passwordMessageStr === '') {
         let loginSuccess = false;
 
-        // 获取之前注册页面存储在localStorage中的用户数据
         let storedDataList = localStorage.getItem('userDataList');
         let dataList = storedDataList ? JSON.parse(storedDataList) : [];
 

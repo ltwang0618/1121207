@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media (orientation: landscape) {
+    body {
+      flex-direction: row;
+    }
+  }
+  @media (orientation: portrait) {
+    body {
+      flex-direction: column;        
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-right: 50px;
+}
+.header h3 {
+    display: inline;
+    position: absolute;
+    top: 15px;
+    left: 65px;
+}
+.header a{
+    padding-left: 10px;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: #f5f5ff;
+    clear: both;
+}
+.border{
+    margin-left: 10px;
+    width: 1px;
+    height: 30px;
+    border-right: 2px solid rgb(3, 2, 2);
+}
+
+.left img{
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+    
+}
+.left{
+    position: absolute;
+    left:360px;
+}
+.left li {
+    padding-top: 60px;
+    
+}
+.left a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 15%;
+    border-color: #f7d1bc;
+    background: #f2f2f5;
+}
+.search img{
+    width: 100px;
+    height: 40px;
+}
+.search{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   padding-right: 160px;
+   padding-top: 10px; 
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    clear: both;
+    padding-left: 300px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.bookMark{
+    position: absolute;
+    top: 70px;
+}
+.download{
+    position: absolute;
+    top: 130px;
+}
+
+.star ul {
+    transition-delay: 8s;
+    direction: ltr;
+    clear: both;
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  .star li a {
+    display: inline-block;
+    color: #aaa;
+    transition: .5s;
+    cursor: pointer;
+    clear: both;
+    text-decoration: none;
+  }
+  
+  .star li:hover a {
+    color: #f00;
+  }
+  
+  .star li:hover~li a {
+    color: #ff0000; /* 将其他星星重置为初始颜色 */
+  }
+  
+.appList{
+    position: relative;
+    padding-top: 60px;
+    padding-right: 100px;
+}
+
+.right{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    margin-left: 300px;
+}
+.app{
+    display: flex;
+    padding-bottom: 20px;
+}
+.item{
+    border-radius: 15%;
+}
+.size{
+    width: 64px;
+    height: 64px;
+}
+
+.app2{
+    padding-right: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+h1{
+    border: 1px dashed #f7d1bc;
+    border-radius: 15%;
+    width: 165px;
+    background: #c6c6f9;
+    
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
+}
+.footer ul {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-right: 50px;
+}
+.footer ul li{
+    padding-top: 20px;
+}
+.fborder{
+    margin-left: 10px;
+    width: 1px;
+    height: 30px;
+    border-right: 2px solid #dee2e6;
+    margin-top: 15px;
+}
+.footer a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+.footerthumb{
+    margin-top: 20px;
+    padding-left: 60px;
+    
+}
+.footer h3 {
+    display: inline;
+    position: absolute;
+    top: 25px;
+    left: 120px;
+}

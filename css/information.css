@@ -42,6 +42,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -120,6 +121,7 @@ body{
     width: 100px;
     height: 40px;
 }
+
 .search{
    display: flex;
    align-items: center;
@@ -151,7 +153,10 @@ body{
     position: absolute;
     top: 130px;
 }
-
+.result a{
+    width: 16px;
+    height: 32px;
+}
 .star ul {
     transition-delay: 8s;
     direction: ltr;

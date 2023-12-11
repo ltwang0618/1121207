@@ -24,13 +24,14 @@
             <li><a href="#"><img src="img/LoginWhite.png" alt=""></a></li>
         </ul>
     </div>
-    <div class="search">  
-        <div class="input">
-            <input type="text" size="30" placeholder="輸入想要的App!" onfocus="this.placeholder=''" onblur="this.placeholder='輸入想要的App!'">
-        </div>
-            <a href="#" class="searchA"><img src="img/FindAppButton.png" alt=""></a>
+    <div class="search"  style="position: relative;">  
+            <input type="text"  id="search" size="30" placeholder="輸入想要的App!" onfocus="this.placeholder=''" onblur="this.placeholder='輸入想要的App!'"  >
+            <button type="button" class="btn" ><img src="img/FindAppButton.png" alt=""></button>
+    <div class="result" style=" z-index: 5;" >  
+        <p class="result" style="font-size: 16px; color: black;position: absolute; top: 60px; right: 15%;"></p></div>
         </div> 
-    <div class="content">
+        
+    <div class="content" style="position: relative;">
         
         <div class="left">
             <ul style="display: flex;flex-direction: column;">
@@ -217,5 +218,6 @@
         </ul>
         
     </div>
+    <script src="js/search.js"></script>
 </body>
 </html>

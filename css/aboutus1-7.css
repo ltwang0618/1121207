@@ -52,6 +52,7 @@ a{
     display:flex;
     justify-content:center;
     align-items:center;
+    height:541px;
 }
 .WishesApp{
     display:flex;

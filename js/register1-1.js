@@ -33,7 +33,23 @@ function check() {
             dataList.push(userData);
             alert('註冊成功');
             emailCheck.innerHTML = '';
-            localStorage.setItem('userDataList', JSON.stringify(dataList));
+
+            // 傳送資料
+            fetch('http://localhost:3000/users', {
+                method: 'POST',//請求方法:POST
+                headers: {
+                    'Content-Type': 'application/json', //請求內容類型為json
+                },
+                body: JSON.stringify(userData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Registration successful:', data);
+            })
+            .catch(error => {
+                console.error('Registration failed:', error);
+            });
+
         } else {
             alert('帳戶或密碼輸入錯誤');
         }
@@ -75,10 +91,10 @@ function check() {
     });
 
     const date = document.querySelector('.date');
-    btn.addEventListener('click',function(e){
+    btn.addEventListener('click', function (e) {
         let str = '';
         let dateValue = date.value;
-        str = dateValue;      
+        str = dateValue;
     });
 }
 

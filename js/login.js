@@ -22,21 +22,25 @@ btn.addEventListener('click', function (e) {
     if (accountMessageStr === '' && passwordMessageStr === '') {
         let loginSuccess = false;
 
-        let storedDataList = localStorage.getItem('userDataList');
-        let dataList = storedDataList ? JSON.parse(storedDataList) : [];
+        fetch('http://localhost:3000/users')
+            .then(response => response.json())
+            .then(dataList => {
+                dataList.forEach(function (item) {
+                    if (account === item.account && password === item.password) {
+                        loginSuccess = true;
+                        alert('登入成功');
+                        document.querySelector('.account').value = '';
+                        document.querySelector('.password').value = '';
+                        return;
+                    }
+                });
 
-        dataList.forEach(function (item) {
-            if (account === item.account && password === item.password) {
-                loginSuccess = true;
-                alert('登入成功');
-                document.querySelector('.account').value = '';
-                document.querySelector('.password').value = '';
-                return;
-            }
-        });
-
-        if (!loginSuccess) {
-            alert('登入失敗');
-        }
+                if (!loginSuccess) {
+                    alert('登入失敗');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching user data:', error);
+            });
     }
 });

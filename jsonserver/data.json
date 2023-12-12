@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "account": "abc123@gmail.com",
+      "password": "asd",
+      "userName": "asd",
+      "birthday": "2023-12-19",
+      "id": 1
+    },
+    {
+      "account": "qw123@gmail.com",
+      "password": "qwe",
+      "userName": "qwe",
+      "birthday": "2023-12-28",
+      "id": 2
+    },
+    {
+      "account": "zxc@gmail.com",
+      "password": "qwe",
+      "userName": "qwe",
+      "birthday": "2023-12-14",
+      "id": 3
+    }
+  ]
+}

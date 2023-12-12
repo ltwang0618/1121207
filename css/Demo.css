@@ -1,0 +1,90 @@
+.wrap{
+    margin: 0 auto;
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
+    margin-bottom: 40px;
+}
+.header h1 a{
+    background-image: url(../images/logo.png);
+    width: 189px;
+    height: 44px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.header ul{
+    display:flex;
+    align-items: center;
+}
+.header ul li a{
+    padding:10px 20px;
+    font-family: Noto Sans TC;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: black;
+}/*  */
+.line{
+    border-right: 1px solid rgba(75, 73, 201, 1);
+    border-left: 1px solid rgba(75, 73, 201, 1);
+}
+.header ul li .registerBtn{
+    background-color: rgba(75, 73, 201, 1);
+    border-radius: 100px;
+    color:white;
+    margin-left: 20px;
+}
+.header ul li .loginBtn{
+    background-color: White;
+    border-radius: 100px;
+    border: 1px solid rgba(37, 43, 57, 0.3);
+    margin-left: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 300px;
+    box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
+    background-color: rgba(242, 242, 245, 1);
+}
+.footer span a{
+    background-image: url(../images/logo.png);
+    width: 189px;
+    height: 44px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.footer .footerIcon{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footerIcon li{
+    margin-right: 20px;
+    
+}
+.footer .footerIcon li a{
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.footerMenu{
+    display: flex;
+    align-items: center;
+}
+.footer .footerMenu li a{
+    padding: 10px 10px;
+}
+.footerLine{
+    border-left: 1px solid rgba(75, 73, 201, 1);
+}

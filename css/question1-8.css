@@ -76,7 +76,7 @@ html, body{
 
 /* footer */
 .Footer{
-    height:128px;
+    height:15%;
     width:100%;
     display:flex;
     justify-content:center;

@@ -251,9 +251,12 @@ img.WishesMan{
 /* footer */
 .Footer{
     height:128px;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
+    position: fixed;
+    top:85%;
     background-color: #F2F2F5;
 }
 .FooterMenu{

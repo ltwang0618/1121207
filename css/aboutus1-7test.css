@@ -191,10 +191,6 @@ img.FooterLeftIcon{
     padding: 40px 300px;
     box-shadow: 0px 2px 16px 0px rgba(37, 43, 57, 0.1);
     background-color: rgba(242, 242, 245, 1);
-    height:15%;
-    position:  fixed;
-    top:85%;
-    width:100%;
 }
 .footer span a{
     background-image: url(../images/logo.png);

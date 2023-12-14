@@ -61,6 +61,7 @@ html, body{
     align-items:center;
     padding-bottom: 128px;
     height:380px;
+    flex:1;
 }
 .WishesApp{
     display:flex;

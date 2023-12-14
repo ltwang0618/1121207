@@ -6,8 +6,12 @@ a{
 
 /* 最外圍 */
 .container{
-    margin:0 auto;
-    width:100%;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column; 
+    min-height: 100vh;
+    flex: 1;
 }
 
 /* title */
@@ -52,7 +56,7 @@ a{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:541px;
+    height:410px;
 }
 .WishesApp{
     display:flex;
@@ -70,13 +74,9 @@ a{
 
 /* footer */
 .Footer{
-    height:15%;
-    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
-    position: fixed;
-    top:85%;
     background-color: #F2F2F5;
 }
    

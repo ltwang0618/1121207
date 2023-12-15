@@ -31,9 +31,10 @@ btn.addEventListener('click', function (e) {
                         alert('登入成功');
                         document.querySelector('.account').value = '';
                         document.querySelector('.password').value = '';
+                        window.location.href = 'https://ltwang0618.github.io/1121207/index1test.html';
                         return;
                     }
-                    window.location.href = 'https://ltwang0618.github.io/1121207/index1test.html';
+                    
                 });
 
                 if (!loginSuccess) {

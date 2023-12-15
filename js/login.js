@@ -33,6 +33,7 @@ btn.addEventListener('click', function (e) {
                         document.querySelector('.password').value = '';
                         return;
                     }
+                    window.location.href = 'https://ltwang0618.github.io/1121207/index1test.html';
                 });
 
                 if (!loginSuccess) {

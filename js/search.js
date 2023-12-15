@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (str) {
     const link = document.createElement('a');
     link.href = '#'; 
-    link.textContent = str;
+    link.textContent = `搜尋結果:${str}`;
     
     result.innerHTML = ''; 
     result.appendChild(link); 

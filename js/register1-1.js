@@ -33,7 +33,7 @@ function check() {
             dataList.push(userData);
             alert('註冊成功');
             emailCheck.innerHTML = '';
-
+            window.location.href = 'https://ltwang0618.github.io/1121207/login1-2';
             // 傳送資料
             fetch('http://localhost:3000/users', {
                 method: 'POST',//請求方法:POST

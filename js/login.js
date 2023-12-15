@@ -28,10 +28,10 @@ btn.addEventListener('click', function (e) {
                 dataList.forEach(function (item) {
                     if (account === item.account && password === item.password) {
                         loginSuccess = true;
-                        alert('登入成功');
                         document.querySelector('.account').value = '';
                         document.querySelector('.password').value = '';
                         window.location.href = 'https://ltwang0618.github.io/1121207/index1test.html';
+                        alert('登入成功');
                         return;
                     }
                     

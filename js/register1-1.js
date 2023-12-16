@@ -22,7 +22,32 @@ function check() {
             return;
         }
 
-        if (email != 0 && password != 0 && password === passwordCheck && dateValue != 0) {
+        repect();
+
+        function repect() {
+            axios.get('http://localhost:3000/users')
+                .then(function (res) {
+                    let isEmailUsed = false;
+                    res.data.forEach(function (item) {
+                        if (item.account === email) {
+                            isEmailUsed = true;
+                        }
+                    });
+
+                    if (isEmailUsed) {
+                        let emailCheck = document.querySelector('.emailCheck');
+                        emailCheck.innerHTML = '該帳號已被使用';
+                    } else {
+                        
+                        registerUser();
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching user data:', error);
+                });
+        }
+
+        function registerUser() {
             let userData = {
                 account: email,
                 password: password,
@@ -32,24 +57,24 @@ function check() {
 
             dataList.push(userData);
             alert('註冊成功');
-            emailCheck.innerHTML = '';
-            window.location.href = 'https://ltwang0618.github.io/1121207/login1-2';
-            // 傳送資料
             fetch('http://localhost:3000/users', {
-                method: 'POST',//請求方法:POST
+                method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json', //請求內容類型為json
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(userData),
             })
             .then(response => response.json())
-            .then(data => {
-                console.log('Registration successful:', data);
-            })
             .catch(error => {
                 console.error('Registration failed:', error);
             });
 
+            
+            window.location.href = 'https://ltwang0618.github.io/1121207/login1-2';
+        }
+
+        if (email != 0 && password != 0 && password === passwordCheck && dateValue != 0) {
+            emailCheck.innerHTML = '';
         } else {
             alert('帳戶或密碼輸入錯誤');
         }
@@ -96,9 +121,9 @@ function check() {
         let dateValue = date.value;
         str = dateValue;
     });
-}
 
-function validateEmail(email) {
-    let emailRegex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return emailRegex.test(email);
+    function validateEmail(email) {
+        let emailRegex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return emailRegex.test(email);
+    }
 }
